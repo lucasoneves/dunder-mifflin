@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import NavigationTop from "@/components/NavigationTop";
+import NavigationFooter from "@/components/NavigationFooter";
 
 const roboto = Roboto({ weight: ["500", "700"], subsets: ["latin"] });
 
@@ -17,7 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}><h2>Dunder Mifflin</h2>{children}</body>
+      <body className={roboto.className}>
+        <NavigationTop />
+        {children}
+        <NavigationFooter />
+      </body>
     </html>
   );
 }

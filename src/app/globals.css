@@ -8,4 +8,5 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: inherit;
+  list-style: none;
 }
