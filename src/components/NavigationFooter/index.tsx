@@ -1,8 +1,14 @@
+import styles from './navigation-footer.module.scss';
+
 export default function NavigationFooter() {
-  return <header>
-    <nav>
-      <a href="">Dunder Mifflin</a>
-      <span> - 2024 &copy;</span>
-    </nav>
-  </header>
+  return (
+    <footer className={styles['footer']}>
+      <nav>
+
+
+        <a href="">Dunder Mifflin</a>
+        <span> - 2024 &copy;</span>
+      </nav>
+    </footer>
+  );
 }

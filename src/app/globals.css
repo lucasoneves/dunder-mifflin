@@ -1,6 +1,7 @@
 body {
-  background: #000;
+  /* background: #000; */
   color: #f2f2f2;
+  font-size: 1em;
 }
 
 * {
@@ -9,4 +10,26 @@ body {
   box-sizing: border-box;
   color: inherit;
   list-style: none;
+  text-decoration: none;
 }
+
+.container {
+  max-width: 1366px;
+  margin: auto;
+  padding: 0 12px;
+}
+
+.main {
+  flex: 1;
+  padding: 20px 0;
+}
+
+.content-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.small {
+  font-size: 12px;
+} 

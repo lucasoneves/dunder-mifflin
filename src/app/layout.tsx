@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import NavigationTop from "@/components/NavigationTop";
-import NavigationFooter from "@/components/NavigationFooter";
+import MenuSidebar from "@/components/MenuSidebar";
+import SearchBar from "@/components/SearchBar";
+
+import App from "./provider";
 
 const roboto = Roboto({ weight: ["500", "700"], subsets: ["latin"] });
 
@@ -19,10 +21,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
-        <NavigationTop />
-        {children}
-        <NavigationFooter />
+      <body className={`${roboto.className} content-body`}>
+        <App
+        >
+          <MenuSidebar />
+          <main className="main">
+            <SearchBar />
+    
+            {children}
+          </main>
+        </App>
       </body>
     </html>
   );
