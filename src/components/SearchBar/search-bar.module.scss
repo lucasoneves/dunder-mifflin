@@ -1,3 +1,19 @@
 .search-bar {
   margin-bottom: 40px;
+  background-color: var(--background-theme--element);
+  border-radius: var(--radius);
+  padding: 0 var(--padding);
+  min-height: var(--field-height);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  input {
+    height: calc(var(--field-height) - 10px);
+    font-size: 14px;
+    width: 100%;
+    background-color: inherit;
+    font-family: inherit;
+    flex: 1;
+  }
 }
