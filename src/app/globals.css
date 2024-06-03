@@ -9,7 +9,11 @@ body {
   --background-theme--element: #202020;
   --radius: 12px;
   --padding: 12px;
+  --padding-sm: calc(var(--padding) / 2);
+  --padding-xl: calc(var(--padding) * 2);
   --field-height: 44px;
+  
+  --main-gap: 12px;
 }
 
 * {

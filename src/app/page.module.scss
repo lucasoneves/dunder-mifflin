@@ -1,0 +1,38 @@
+.box {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--main-gap);
+}
+
+.grid-dashboard {
+  display: flex;
+  gap: var(--main-gap);
+  flex-direction: column;
+}
+
+.section-dashboard {
+  display: flex;
+  gap: var(--main-gap);
+  flex-wrap: wrap;
+
+  .box {
+   min-width: 250px; 
+   flex: 1;
+
+   &:last-child {
+    flex: 3;
+   }
+  }
+}
+
+.positions-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--main-gap);
+}
+
+.employers-applications {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--main-gap);
+}
