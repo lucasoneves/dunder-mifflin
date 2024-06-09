@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./page.module.scss";
-import { Button } from "@mui/material";
-import Box from "@/components/Box";
+import { Button, Card } from "@mui/material";
+import Box, { CardType } from "@/components/Box";
 
 export default function Home() {
   return (
@@ -9,33 +9,29 @@ export default function Home() {
       <h2>Dashboard</h2>
       <div className={styles["grid-dashboard"]}>
         <section className={styles["section-dashboard"]}>
-          <article className={styles['positions-info']}>
-            <Box classes={`${styles["box"]}`}>
-              <span className="divider"></span>
+          <article className={styles["positions-info"]}>
+            <Box classes={styles["box"]} status={CardType.DEFAULT}>
               <div className="info">
                 <span>79</span>
                 <h3>Total Sales</h3>
               </div>
             </Box>
-            <Box classes={`${styles["box"]}`}>
-              <span className="divider"></span>
+            <Box classes={styles["box"]} status={CardType.IN_PROGRESS}>
               <div className="info">
                 <span>79</span>
-                <h3>In progress</h3>
+                <h3>Total Sales</h3>
               </div>
             </Box>
-            <Box classes={`${styles["box"]}`}>
-              <span className="divider"></span>
+            <Box classes={styles["box"]} status={CardType.NEW_CLIENTS}>
               <div className="info">
                 <span>79</span>
-                <h3>Finished</h3>
+                <h3>Total Sales</h3>
               </div>
             </Box>
-            <Box classes={`${styles["box"]}`}>
-              <span className="divider"></span>
+            <Box classes={styles["box"]} status={CardType.FINISHED}>
               <div className="info">
                 <span>79</span>
-                <h3>New Clients</h3>
+                <h3>Total Sales</h3>
               </div>
             </Box>
           </article>
