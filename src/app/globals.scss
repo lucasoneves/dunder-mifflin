@@ -1,3 +1,5 @@
+@import './sass/mixins';
+
 body {
   /* background: #000; */
   color: #f2f2f2;
@@ -18,6 +20,9 @@ body {
   --success: #4fae3f;
   --pending: #e5da50;
   --error: #ad4432;
+
+  --font-small: 12px;
+  --font-big: 30px;
 }
 
 * {
@@ -53,5 +58,17 @@ body {
 }
 
 .small {
-  font-size: 12px;
+  font-size: var(--font-small);
 } 
+
+.font-big {
+  font-size: var(--font-big);
+}
+
+.grid-2 {
+  @include grid-columns(2);
+}
+
+.grid-3 {
+  @include grid-columns(3);
+}

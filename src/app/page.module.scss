@@ -31,8 +31,6 @@
   gap: var(--main-gap);
 }
 
-.employers-applications {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: var(--main-gap);
+.leads{
+  display: inline;
 }

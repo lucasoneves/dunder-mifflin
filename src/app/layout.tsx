@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import { Roboto } from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
 import MenuSidebar from "@/components/MenuSidebar";
 import SearchBar from "@/components/SearchBar";
 
