@@ -12,7 +12,7 @@ export default function Home() {
       <div className={styles["grid-dashboard"]}>
         <section className={styles["section-dashboard"]}>
           <article className={styles["positions-info"]}>
-            <Box classes={styles["box"]} status={CardType.DEFAULT}>
+            <Box classes={`${styles["box"]}`} status={CardType.DEFAULT}>
               <div className="info">
                 <h3>Total Sales</h3>
                 <span className="font-big">79</span>
@@ -37,9 +37,16 @@ export default function Home() {
               </div>
             </Box>
           </article>
-          <Box classes={`${styles["box"]}`}>
+          <Box classes={`${styles["box"]} ${styles["column"]}`}>
             <h3>Vendas por Representante</h3>
-            <MyResponsiveBar />
+            <div
+              style={{
+                height: "calc(100% - var(--padding) * 4)",
+                width: "100%",
+              }}
+            >
+              <MyResponsiveBar />
+            </div>
           </Box>
         </section>
         <section className="grid-3">

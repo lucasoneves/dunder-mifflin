@@ -5,6 +5,10 @@
   max-height: 260px;
 }
 
+.column {
+  flex-direction: column;
+}
+
 .grid-dashboard {
   display: flex;
   gap: var(--main-gap);
